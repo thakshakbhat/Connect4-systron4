@@ -1,0 +1,59 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: rgb(221, 152, 67);
+}
+#board {
+    height: 540px;
+    width: 630px;
+    background-color: rgb(27, 40, 221);
+    border: 10px solid rgb(1, 0, 80);
+    
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+    background-color: rgb(202, 145, 76);
+    border-radius: 50%;
+    border: 5px solid rgb(9, 5, 66);
+}
+
+.red-piece {
+    background-color: red;
+}
+
+.yellow-piece {
+    background-color: yellow;
+}
+
+.Yellow_Wins{ 
+    height: 50px;
+    font-size: 50px;
+    position: relative;
+    display: inline-block;
+    animation: move 50s infinite linear;
+    background-color: red;
+   
+}
+.Red_Wins{
+    height: 50px;
+    font-size: 50px;
+    position: relative;
+    display: inline-block;
+    animation: move 50s infinite linear;
+    animation-iteration-count: infinite;
+    background-color: yellow;
+}
+@keyframes move {
+    from {
+      left: 200px;
+    }
+    to {
+      left: -2000px;
+    }
+  }
